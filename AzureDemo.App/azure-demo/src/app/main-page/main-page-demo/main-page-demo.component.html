@@ -1,0 +1,19 @@
+<div class="title">Azure Demo</div>
+<button (click)="clear()">Clear</button>
+
+<div class="by-id">
+  <input type="number" [(ngModel)]="itemId">
+  <button type="button" (click)="getById()">Get by Id</button>
+</div>
+
+<pre *ngIf="item">
+  {{(item) | json}}
+</pre>
+
+<div class="all-item">
+  <button type="button" (click)="getAllItems()">Get all items</button>
+</div>
+
+<pre *ngIf="items">
+  {{(items) | json}}
+</pre>
