@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  rootURL: 'https://localhost:7007/api/mainpage',
+  rootURL: 'https://ngvuazuredemo.azurewebsites.net',
 };

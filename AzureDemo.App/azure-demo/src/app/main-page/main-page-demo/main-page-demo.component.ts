@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DemoServiceService } from '../demo-service.service';
 
 @Component({
@@ -6,16 +6,11 @@ import { DemoServiceService } from '../demo-service.service';
   templateUrl: './main-page-demo.component.html',
   styleUrls: ['./main-page-demo.component.scss']
 })
-export class MainPageDemoComponent implements OnInit {
+export class MainPageDemoComponent{
   public item: any;
   public itemId: any;
   public items: any;
-  private readonly QUERY = 'SELECT * from c';
   constructor(private demoServiceService: DemoServiceService) { }
-
-  ngOnInit(): void {
-    console.log("aaaaaaaa");
-  }
 
   getById() {
     this.demoServiceService.getItem(this.itemId)
@@ -28,7 +23,7 @@ export class MainPageDemoComponent implements OnInit {
   }
 
   getAllItems() {
-    this.demoServiceService.getAllItems(this.QUERY)
+    this.demoServiceService.getAllItems()
     .pipe()
     .subscribe({
       next: (result: any) => {

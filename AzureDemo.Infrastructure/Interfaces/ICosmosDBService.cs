@@ -4,7 +4,7 @@ namespace AzureDemo.Infrastructure.Interfaces
 {
     public interface ICosmosDbService
     {
-        Task<IEnumerable<Item>> GetItemsAsync(string query);
+        Task<IEnumerable<Item>> GetItemsAsync();
 
         Task<Item> GetItemAsync(string id);
     }

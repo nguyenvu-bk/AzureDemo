@@ -21,10 +21,10 @@ namespace AzureDemo.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("items/{query}")]
-        public async Task<ActionResult> GetItems(string query)
+        [HttpGet("items")]
+        public async Task<ActionResult> GetItems()
         {
-            var result = await _cosmosDbService.GetItemsAsync(query);
+            var result = await _cosmosDbService.GetItemsAsync();
 
             return Ok(result);
         }

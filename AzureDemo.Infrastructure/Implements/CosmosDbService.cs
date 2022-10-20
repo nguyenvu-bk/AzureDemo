@@ -6,6 +6,7 @@ namespace AzureDemo.Infrastructure.Implements
 {
     public class CosmosDbService : ICosmosDbService
     {
+        private readonly string QUERY_STRING = "SELECT * from c";
         private Container _container;
 
         public CosmosDbService(
@@ -29,9 +30,9 @@ namespace AzureDemo.Infrastructure.Implements
             }
         }
 
-        public async Task<IEnumerable<Item>> GetItemsAsync(string queryString)
+        public async Task<IEnumerable<Item>> GetItemsAsync()
         {
-            var query = _container.GetItemQueryIterator<Item>(new QueryDefinition(queryString));
+            var query = _container.GetItemQueryIterator<Item>(new QueryDefinition(QUERY_STRING));
             var results = new List<Item>();
             while (query.HasMoreResults)
             {

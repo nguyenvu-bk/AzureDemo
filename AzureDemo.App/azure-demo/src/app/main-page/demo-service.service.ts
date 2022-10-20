@@ -7,12 +7,12 @@ import { environment } from 'src/environments/environment';
 })
 export class DemoServiceService {
   constructor(private http: HttpClient) {}
-
+  private baseURL = '/api/mainpage';
   getItem(itemId: number) {
-    return this.http.get(environment.rootURL + `/item/${itemId}`);
+    return this.http.get(environment.rootURL + this.baseURL + `/item/${itemId}`);
   }
 
-  getAllItems(query: string) {
-    return this.http.get(environment.rootURL + `/items/${query}`);
+  getAllItems() {
+    return this.http.get(environment.rootURL + this.baseURL + `/items`);
   }
 }
