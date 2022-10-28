@@ -5,11 +5,11 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDemo", "AzureDemo\AzureDemo.csproj", "{5BCF51A5-99E4-4ABF-8A3B-871F44C36DBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDemo.API", "AzureDemo.API\AzureDemo.API.csproj", "{C79ED1B2-3121-465D-B833-7B2FEBB4BF42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDemo.API", "AzureDemo.API\AzureDemo.API.csproj", "{C79ED1B2-3121-465D-B833-7B2FEBB4BF42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDemo.Domain", "AzureDemo.Domain\AzureDemo.Domain.csproj", "{41DA22FC-1BAF-4D05-A0DE-9E4249D70C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDemo.Domain", "AzureDemo.Domain\AzureDemo.Domain.csproj", "{41DA22FC-1BAF-4D05-A0DE-9E4249D70C44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureDemo.Infrastructure", "AzureDemo.Infrastructure\AzureDemo.Infrastructure.csproj", "{8C2FBE51-AC37-4F23-A170-13EC3F346366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDemo.Infrastructure", "AzureDemo.Infrastructure\AzureDemo.Infrastructure.csproj", "{8C2FBE51-AC37-4F23-A170-13EC3F346366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
